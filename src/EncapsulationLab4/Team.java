@@ -27,8 +27,6 @@ public class Team {
         return Collections.unmodifiableList(firstTeam);
     }
 
-    public List<Person> getReserveTeam(){
-        return Collections.unmodifiableList(reserveTeam);
-    }
+    public List<Person> getReserveTeam(){ return Collections.unmodifiableList(reserveTeam); }
 }
 

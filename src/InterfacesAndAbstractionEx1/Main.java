@@ -10,9 +10,9 @@ public class Main {
         if(Arrays.asList(citizenInterfaces).contains(Person.class)){
             Method[] method = Person.class.getDeclaredMethods();
 
-            Scanner scanner = new Scanner(System.in);
-            String name = scanner.nextLine();
-            int age = Integer.parseInt(scanner.nextLine());
+            Scanner sc = new Scanner(System.in);
+            String name = sc.nextLine();
+            int age = Integer.parseInt(sc.nextLine());
 
             Person person = new Citizen(name,age);
 

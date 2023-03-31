@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Main {
-    public static <Person> void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(reader.readLine());
 
@@ -32,6 +32,5 @@ public class Main {
         for (Person person : people) {
             System.out.println(person.toString());
         }
-
     }
 }

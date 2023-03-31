@@ -4,6 +4,4 @@ import java.util.ArrayDeque;
 
 public class Stack {
     private ArrayDeque<String> data;
-
-
 }

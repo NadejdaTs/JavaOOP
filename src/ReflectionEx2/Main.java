@@ -26,6 +26,10 @@ public class Main {
             String command = input.split("_")[0];
             int value = Integer.parseInt(input.split("_")[1]);
             Method currentMethod = getCurrentMethod(methods, command);
+            /*Method currentMethod1 = methods.stream()
+                    .filter(m -> m.getName().equals(command))
+                    .findFirst()
+                    .orElse(null);*/
             currentMethod.setAccessible(true);
             currentMethod.invoke(blackBoxInt, value);
             System.out.println(innerValue.get(blackBoxInt));
